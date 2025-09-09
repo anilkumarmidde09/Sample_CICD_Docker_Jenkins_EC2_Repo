@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/anilkumarmidde09/Sample_CICD_Docker_Jenkins_EC2_Repo.git'
+                git branch: 'main', url: 'https://github.com/anilkumarmidde09/Sample_CICD_Docker_Jenkins_EC2_Repo.git'
+
             }
         }
 
